@@ -23,8 +23,8 @@ public class Entity
 		components = new();
 	}
 
-	internal void IterComponents(Action<Component> action) => components.ForEach(action);
-	internal IEnumerable<Component> QueryComponents(Func<Component, bool> pred) => components.Where(pred);
+	//internal void IterComponents(Action<Component> action) => components.LoopAll(pair => action(pair.Value));
+	//internal IEnumerable<Component> QueryComponents(Func<Component, bool> pred) => components.Where(pair => pred(pair.);
 
 	/// <summary>
 	/// Creates a new T component with "new()" ctor, and calls Init() function.

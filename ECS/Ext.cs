@@ -41,11 +41,4 @@ public static class CuntExtensions
         foreach (var t in e)
             a(t);
     }
-
-
-    //internal static Type[] GetQueryTypes<T>(T item)
-    //{
-    //    var t = typeof(T);
-    //    if(t.)
-    //}
 }

@@ -19,7 +19,7 @@ public sealed class Commands
 
 		foreach (var e in app.entities)
 		{
-			foreach (var c in e.components)
+			foreach (var c in e.components.Values)
 			{
 				if (c.GetType() == ty)
 				{
@@ -45,7 +45,7 @@ public sealed class Commands
 
 			List<object> tupleItems = new();
 
-			foreach (var c in e.components)
+			foreach (var c in e.components.Values)
 			{
 				if (types.Contains(c.GetType()))
 				{
